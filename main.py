@@ -11,9 +11,6 @@ def register_handlers(handlers:list):
         handler(DP)
 
 
-def register_handlers(callbacks:list):
-    for callback in callbacks:
-        callback(DP)
 
 
 async def  callback(callback_query):
@@ -31,8 +28,6 @@ def register_echo_hendlers(dp:Dispatcher):
 
 
 
-def register_callback(dp:Dispatcher, callback , filter):
-    dp.register_callback_query_handler( callback, lambda f: f.data == filter )
 
 
 def start():
